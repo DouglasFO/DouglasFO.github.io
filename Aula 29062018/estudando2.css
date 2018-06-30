@@ -1,0 +1,33 @@
+body{
+  color: red;
+  background-color: lightblue;
+  background-image: url("imagem.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+
+  font-family: Times,sans-serif;
+
+  font-style: italic;
+
+  font-variant: inherit;
+
+  font-weight: bold;
+  font-size:  80%;
+  /*font-size:  800px;*/
+
+  text-indent: 10%;
+
+  /*text-decoration: overline;*/
+
+  text-align: center;
+
+
+}
+
+
+p:hover{
+  color: green;
+
+}
