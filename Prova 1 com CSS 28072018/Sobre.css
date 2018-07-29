@@ -1,0 +1,77 @@
+/*Header*/
+header img{
+    width: 30%;
+    height: 30%;
+}
+
+header a img{
+  width: 5%;
+  height: 5%;
+  float: right;
+  margin-top: 65px;
+}
+
+/*nav*/
+nav{
+  text-align: center;
+  background-color: gray;
+  float: left;
+  clear: both;
+  margin-top: 20px;
+  width: 100%;
+
+
+}
+
+nav ul{
+  height: 40px;
+  margin-left: 20px;
+
+}
+
+nav ul li{
+  display: inline;
+
+}
+
+nav li a{
+
+      display: inline-block;
+
+      color: lightgray;
+      text-decoration: none;
+      margin-top: 8px;
+      float: left;
+
+      padding-right: 10%;
+}
+
+/*main*/
+main{
+  margin-top: 8%;
+}
+
+main article{
+    text-align: center;;
+    padding: 20px;
+
+}
+
+main article img{
+    align-self: center;
+    width: 60%;
+    padding: 30px;
+    background-color: lightgray;
+
+}
+
+main article figure figcaption{
+    margin-top: -29px;
+}
+
+
+
+footer{
+  padding-top: 20px;
+  clear: both;
+}

@@ -1,0 +1,136 @@
+/*Header*/
+header img{
+    width: 30%;
+    height: 30%;
+}
+
+header a img{
+  width: 5%;
+  height: 5%;
+  float: right;
+  margin-top: 65px;
+}
+
+/*nav*/
+nav{
+  text-align: center;
+  background-color: gray;
+  float: left;
+  clear: both;
+  margin-top: 20px;
+  width: 100%;
+
+
+}
+
+nav ul{
+  height: 40px;
+  margin-left: 20px;
+
+}
+
+nav ul li{
+  display: inline;
+
+}
+
+nav li a{
+
+      display: inline-block;
+
+      color: lightgray;
+      text-decoration: none;
+      margin-top: 8px;
+      float: left;
+
+      padding-right: 10%;
+}
+
+/*main*/
+main{
+  margin-top: 8%;
+}
+
+main img{
+  width: 72%;
+  height: 300px;
+  float: left;
+}
+
+/* aside*/
+aside{
+
+
+  float: right;
+
+  width: 25%;
+  padding-right: 8px;
+
+}
+
+
+aside ul{
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+
+
+}
+
+
+
+aside li{
+    list-style: none;
+    margin-top: 20px;
+
+}
+
+aside li:before{
+    content: '- ';
+}
+
+
+/*article*/
+article{
+  float: left;
+  width: 71%;
+
+}
+
+
+hr{
+  clear: both;
+}
+
+
+
+section{
+  float: left;
+  width: 390px;
+  height: 200px;
+  margin: 0px;
+
+}
+
+section article{
+    margin-top: 20px;
+    float: left;
+    width: 270px;
+    height: 100px;
+}
+
+section img{
+    width: 100%;
+    height: 60%;
+}
+
+section a{
+    float: right;
+    text-decoration: none;
+}
+
+footer{
+  padding-top: 155px;
+  clear: both;
+}
