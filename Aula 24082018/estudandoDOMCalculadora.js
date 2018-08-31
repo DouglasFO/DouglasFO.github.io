@@ -173,15 +173,11 @@ elemento.addEventListener('click',bC,false);
 
 function bMais(){
     texto1 = document.getElementById('calc-output');
-    if(texto1.textContent == '0')
+    var tam = texto1.textContent.length;
+    if(texto1.textContent[tam-1] != '+')
     {
-        texto1.textContent = '+';
+        texto1.textContent += '+';
     }
-    else{
-      texto1.textContent += '+';
-    }
-
-
 }
 
 elemento = document.getElementById('button-+');
@@ -189,16 +185,59 @@ elemento.addEventListener('click',bMais,false);
 
 function bMenos(){
     texto1 = document.getElementById('calc-output');
-    if(texto1.textContent == '0')
+    var tam = texto1.textContent.length;
+    if(texto1.textContent[tam-1] != '-')
     {
-        texto1.textContent = '-';
+        texto1.textContent += '-';
     }
-    else{
-      texto1.textContent += '-';
-    }
-
 
 }
 
 elemento = document.getElementById('button--');
 elemento.addEventListener('click',bMenos,false);
+
+function bMulti(){
+    texto1 = document.getElementById('calc-output');
+    var tam = texto1.textContent.length;
+    //alert(tam);
+    if(texto1.textContent[tam-1] != '*')
+    {
+        texto1.textContent += '*';
+    }
+}
+
+elemento = document.getElementById('button-*');
+elemento.addEventListener('click',bMulti,false);
+
+function bDiv(){
+    texto1 = document.getElementById('calc-output');
+    var tam = texto1.textContent.length;
+    if(texto1.textContent[tam-1] != '/')
+    {
+        texto1.textContent += '/';
+    }
+
+
+}
+
+elemento = document.getElementById('button-/');
+elemento.addEventListener('click',bDiv,false);
+
+function bIgual(){
+    texto1 = document.getElementById('calc-output');
+    if(texto1.textContent == '0')
+    {
+      texto1.textContent = '0';
+    }
+    else{
+      var result = eval(texto1.textContent);
+      //alert(result);
+      texto1.textContent = result;
+      //texto1.textContent += '-';
+    }
+
+
+}
+
+elemento = document.getElementById('button-=');
+elemento.addEventListener('click',bIgual,false);
